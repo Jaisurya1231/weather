@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Weather App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f0f0f0;
+        }
+        #weather {
+            margin-top: 50px;
+        }
+        body{
+            background-image: url(sky.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Weather App</h1>
+    <input type="text" id="city-input" placeholder="Enter city name">
+    <button onclick="getWeather()">Get Weather</button>
+    <div id="weather">
+        <h2 id="city"></h2>
+        <h3 id="temp"></h3>
+        <h3 id="desc"></h3>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
